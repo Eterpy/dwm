@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# 音量减少 %5
+pamixer -d 5
+
+# 更新状态栏
+status=$(slstatus -1)
+xsetroot -name "$status"
